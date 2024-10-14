@@ -1,3 +1,18 @@
+'''
+Using git bash :
+Execute the following commands in git bash:
+    git clone https://github.com/SubramanyaJ/diabetes_detection.git
+    cd /diabetes_detection/src/testing
+    python3 bayesianDecisionTree.py
+    (Libraries need to be installed)
+
+Using Google Collab:
+Copy this code into a python notebook
+Upload data.csv OR main.csv which is in this directory to the runtime
+(File icon in the left panel)
+Run
+'''
+
 # Accuracy : 0.8729576525508503 
 
 import pandas as pd
@@ -12,7 +27,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-data = pd.read_csv('../../datasets/data.csv')
+data = pd.read_csv('data.csv')
 
 # Separate the features and target variable
 X = data.drop(columns=['Target'])
